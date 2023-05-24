@@ -35,15 +35,12 @@ client.query(
   (err, res) => {
     if (!err) {
       dataParse(res.rows);
-      // console.log(result);
     } else {
       console.log(err.message);
     }
     client.end;
   }
 );
-
-let result = [];
 
 function dataParse(data) {
   let decryptedValues = {
@@ -90,8 +87,5 @@ function dataParse(data) {
 
     // Output data
     console.log(decryptedValues);
-
-    // Store in Array
-    result.push(decryptedValues);
   }
 }
