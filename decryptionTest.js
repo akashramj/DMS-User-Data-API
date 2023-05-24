@@ -13,8 +13,8 @@ function decryptValue(encryptedValue, iv, secretKey) {
   return decrypted;
 }
 
-const encryptedValue = "00467";
-const iv = "b3874534bfec1150008155ac5aedfe84";
+const encryptedValue = "8cf4b1c43d0450e1b13cc9";
+const iv = "c5278d1af81ef48e923de7bc20a52131";
 const secretKey = "H+MbQeUhViYq4t6w9z$C&F)J@NERfVaW";
 
 const decryptedValue = decryptValue(encryptedValue, iv, secretKey);
